@@ -1,0 +1,42 @@
+<!-- Product section-->
+<section class="py-5">
+    <div class="container px-4 px-lg-5 my-5 text-dark">
+        <div class="row gx-4 gx-lg-5 align-items-center">
+            <div class="col-md-6"><img style="height: 400px; width: 400px;" class="card-img-top mb-5 mb-md-0" src="{{userDetails.image}}"   alt="" /></div>
+            <div class="col-md-6">
+                <div class="small mb-1"></div>
+                <h1 class="display-5 fw-bolder text-danger"> {{userDetails.firstName}} {{userDetails.lastName}}</h1>
+
+                <br>
+                <br>
+                
+                <button class="btn btn-danger" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    Personal Details
+                  </button>
+                  <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+                        <b>Maiden Name:</b>  {{userDetails.maidenName}} <br>
+                        <b>Age:</b> {{userDetails.age}} <br>
+                        <b>Gender:</b> {{userDetails.gender}} <br>
+                        <b>Email:</b> {{userDetails.email}} <br>
+                        <b>Phone:</b> {{userDetails.phone}} <br>
+                        <b>Username:</b> {{userDetails.username}} <br>
+                        <b>Password:</b> {{userDetails.password}} <br>
+                        <b>Birthdate:</b> {{userDetails.birthDate}} <br>
+                        <b>Image:</b> <i>{{userDetails.image}}</i> <br>
+                        <b>Bloodgroup:</b> {{userDetails.bloodGroup}} <br>
+                        <b>Height:</b> {{userDetails.height}} <br>
+                        <b>Weight:</b> {{userDetails.weight}} <br>
+                        <b>EyeColor:</b> {{userDetails.eyeColor}} <br>
+                        <b> Hair: </b> 
+                          color: {{userDetails.hair.color}} <br>
+                          type:  {{userDetails.hair.type}}
+                                   
+                    </div>
+                  </div>
+
+        
+            </div>
+        </div>
+    </div>
+</section>
